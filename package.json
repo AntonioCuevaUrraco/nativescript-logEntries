@@ -11,7 +11,7 @@
 	},
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/YourName/nativescript-yourplugin.git"
+		"url": "https://github.com/AntonioCuevaUrraco/nativescript-logEntries"
 	},
 	"keywords": [
 		"NativeScript",
@@ -24,12 +24,12 @@
 		"email": "cuevajodar@gmail.com"
 	},
 	"bugs": {
-		"url": "https://github.com/YourName/nativescript-yourplugin/issues"
+		"url": "https://github.com/AntonioCuevaUrraco/nativescript-logEntries/issues"
 	},
 	"license": {
 		"type": "MIT",
-		"url": "https://github.com/YourName/nativescript-yourplugin/blob/master/LICENSE"
+		"url": "https://github.com/AntonioCuevaUrraco/nativescript-logEntries/blob/master/LICENSE"
 	},
-	"homepage": "https://github.com/YourName/nativescript-yourplugin",
-	"readmeFilename": "README.md",
+	"homepage": "https://github.com/AntonioCuevaUrraco/nativescript-logEntries",
+	"readmeFilename": "README.md"
 }
