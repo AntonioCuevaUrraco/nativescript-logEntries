@@ -1,0 +1,9 @@
+{
+	"nativescript": {
+		"id": "org.nativescript.demo"
+	},
+	"dependencies": {
+	},
+	"devDependencies": {
+	}
+}

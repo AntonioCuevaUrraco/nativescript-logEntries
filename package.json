@@ -1,0 +1,35 @@
+{
+	"name": "nativescript-logEntries",
+	"version": "1.0.0",
+  	"description": "A NativeScript module providing LogEntries functionalites for Android and iOS",
+	"main": "logEntries.js",
+	"nativescript": {
+		"platforms": {
+			"android": "1.6.0",
+      		"ios": "1.6.0"
+		}
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/YourName/nativescript-yourplugin.git"
+	},
+	"keywords": [
+		"NativeScript",
+		"LogEntries",
+		"Android",
+		"iOS"
+	],
+	"author": {
+		"name": "Antonio Cueva",
+		"email": "cuevajodar@gmail.com"
+	},
+	"bugs": {
+		"url": "https://github.com/YourName/nativescript-yourplugin/issues"
+	},
+	"license": {
+		"type": "MIT",
+		"url": "https://github.com/YourName/nativescript-yourplugin/blob/master/LICENSE"
+	},
+	"homepage": "https://github.com/YourName/nativescript-yourplugin",
+	"readmeFilename": "README.md",
+}
