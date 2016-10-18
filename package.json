@@ -1,35 +1,41 @@
 {
-	"name": "nativescript-logEntries",
-	"version": "1.1.0",
-  	"description": "A NativeScript module providing LogEntries functionalites for Android and iOS",
-	"main": "logEntries.js",
-	"nativescript": {
-		"platforms": {
-			"android": "1.6.0",
-      		"ios": "1.6.0"
-		}
-	},
-	"repository": {
-		"type": "git",
-		"url": "https://github.com/AntonioCuevaUrraco/nativescript-logEntries"
-	},
-	"keywords": [
-		"NativeScript",
-		"LogEntries",
-		"Android",
-		"iOS"
-	],
-	"author": {
-		"name": "Antonio Cueva",
-		"email": "cuevajodar@gmail.com"
-	},
-	"bugs": {
-		"url": "https://github.com/AntonioCuevaUrraco/nativescript-logEntries/issues"
-	},
-	"license": {
-		"type": "MIT",
-		"url": "https://github.com/AntonioCuevaUrraco/nativescript-logEntries/blob/master/LICENSE"
-	},
-	"homepage": "https://github.com/AntonioCuevaUrraco/nativescript-logEntries",
-	"readmeFilename": "README.md"
+  "name": "nativescript-logEntries",
+  "version": "1.0.1",
+  "description": "A NativeScript module providing LogEntries functionalites for Android and iOS",
+  "main": "logEntries.js",
+  "nativescript": {
+    "platforms": {
+      "android": "1.6.0",
+      "ios": "1.6.0"
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AntonioCuevaUrraco/nativescript-logEntries.git"
+  },
+  "keywords": [
+    "NativeScript",
+    "LogEntries",
+    "Android",
+    "iOS"
+  ],
+  "author": {
+    "name": "Antonio Cueva",
+    "email": "cuevajodar@gmail.com"
+  },
+  "bugs": {
+    "url": "https://github.com/AntonioCuevaUrraco/nativescript-logEntries/issues"
+  },
+  "license": {
+    "type": "MIT",
+    "url": "https://github.com/AntonioCuevaUrraco/nativescript-logEntries/blob/master/LICENSE"
+  },
+  "homepage": "https://github.com/AntonioCuevaUrraco/nativescript-logEntries",
+  "readmeFilename": "README.md",
+  "readme": "# nativescript-logEntries\nThis plugin provide a way to use LogEntries service on a NativeScript project.   \nThe plugin is a wrap of the android and ios official sdks   \nhttps://github.com/logentries/le_android   \nhttps://github.com/logentries/le_ios\n## Installation\n```\ntns plugin add nativescript-logEntries\n```\n## Usage\nFirst create a new Log for android and/or iOS and store the tokens that logEntries will provide to you   \n\n\n```ts\n//Somewhere on your app.\n\nvar logEntries = require(\"nativescript-logEntries\");\n\n logEntries.init(\"YourToken\");\n logEntries.log(\"this is the message\");\n```\n\nIf you want to use it to send crash reports, store the crash on devie and send it next time the device is opened.\n\n```ts\n//on app.ts\n\nvar setString = applicationSettingModule.setString;\n\napplication.on(application.uncaughtErrorEvent, function(args) {\n\n\tif (args.ios) {\n        console.log(\"NativeScriptError: \" + args.ios);\n        console.log(\"Stacktrace: \" + args.ios.stack);\n        setString(\"crash\", args.ios + args.ios.stack);\n   }\n\telse if (args.android) {\n    console.log(\"NativeScriptError: \" + args.android);\n\t\tconsole.log(\"NativeScriptError: \" + args.android.nativeException);\n\t\tconsole.log(\"NativeScriptError: \" + args.android.nativeException.getMessage());\n\t\tsetString(\"crash\", args.android +\n\t\t                   args.android.nativeException +\n\t\t                   args.android.nativeException.getMessage());\n\t}\n});\n```\n",
+  "gitHead": "d45db77e4341bb1548dd26555290926cf9ca2d4a",
+  "_id": "nativescript-logEntries@1.0.0",
+  "scripts": {},
+  "_shasum": "125f69d4e518b65552e5167c46f5ab3bc2946e17",
+  "_from": "nativescript-logEntries@1.0.0"
 }

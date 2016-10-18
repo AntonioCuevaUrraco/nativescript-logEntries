@@ -20,7 +20,7 @@ function log(message) {
 }
 exports.log = log;
 function checkIfRunning() {
-    if (mSharedInstance === null) {
+    if (mSharedInstance == null) {
         console.log("LogEntries: You must call init first");
         return false;
     }
