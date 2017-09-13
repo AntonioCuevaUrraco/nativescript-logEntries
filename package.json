@@ -2,7 +2,7 @@
   "name": "nativescript-logEntries",
   "version": "1.0.1",
   "description": "A NativeScript module providing LogEntries functionalites for Android and iOS",
-  "main": "logEntries.js",
+  "main": "logEntries",
   "nativescript": {
     "platforms": {
       "android": "1.6.0",
